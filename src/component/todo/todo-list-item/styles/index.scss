@@ -1,0 +1,57 @@
+.item{
+  padding: 8px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  flex-shrink: unset;
+  &__check,
+  &__title,
+  &__uploaded-at,
+  &__del {
+    padding: 12px;
+    color: white;
+  }
+
+  &__check{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+  &__title{
+    flex-grow: 3;
+    display: flex;
+    justify-content: start;
+    font-size: 1rem;
+    align-items: center;
+    span{
+      display: block;
+      height: fit-content;
+    }
+
+  }
+  &__uploaded-at{
+    flex-grow: 3;
+    display: flex;
+    justify-content: end;
+    font-size: 0.8rem;
+    align-items: center;
+    span{
+      display: block;
+      height: fit-content;
+    }
+  }
+  &__del{
+    padding-right: 0;
+    padding-left: 0;
+    button{
+      background-color: #e2e2e2;
+      box-sizing: border-box;
+      border: none;
+      padding: 0.7rem 1rem;
+      border-radius: 4px;
+      color: #4a53e7;
+
+    }
+  }
+}

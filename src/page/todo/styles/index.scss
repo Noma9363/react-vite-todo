@@ -1,0 +1,121 @@
+.todo-root{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(#000b67, rgb(70, 106, 152));
+  border-radius: 1rem;
+  box-shadow: 10px 10px 32px rgba(0, 0, 0, 0.31);
+}
+
+
+.todo{
+  &__header{
+    &__h1{
+      font-size: 1.4em;
+      color: #fff;
+      font-weight: bold;
+    }
+    &__h2{
+      color: #2c99e3;
+      font-size: 2rem;
+    }
+  }
+}
+
+.goal-status{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  p{
+    color: #fff;
+    font-weight: bold;
+    padding: 0.4rem;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 0.2rem;
+    height: fit-content;
+    margin: 0;
+    width: fit-content;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.todo--title{
+  color: white;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.todo-input{
+  display: flex;
+  flex-direction: column;
+  &__label{
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    gap: 0.4rem;
+  }
+  &__input{
+    transition: all 0.3s;
+    &:hover{
+      transform: scale(1.04);
+    }
+    flex-grow: 4;
+    border: none;
+    border-radius: 0.2rem;
+  }
+  &__button{
+    transition: all 0.3s;
+    flex-grow: 1;
+    border-radius: 0.2rem;
+    border: none;
+    background: #4a53e7;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    &:hover{
+      transform: scale(1.04);
+    }
+  }
+}
+
+
+.todo-list__h2{
+  color: #fff;
+  padding-top: 2rem;
+}
+
+.todo-search__input{
+  width: 100%;
+  height: 2rem;
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.2em solid rgba(255,255,255,0.2);
+  color: #fff;
+  &::placeholder{
+    color: #fff;
+  }
+}
+
+
+.todo-list__ul{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.4rem;
+  li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    background: rgba(255, 255, 255, 0.25);
+    padding-right: 1rem;
+
+    label{
+      display: flex;
+      align-items: center;
+      padding-left: 1rem;
+    }
+  }
+}

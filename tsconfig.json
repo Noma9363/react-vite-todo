@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "Bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@/*" : ["./src/*"],
+      "@/components/*" : ["./src/component/*"],
+      "@/interfaces/*" : ["./src/interface/*"],
+      "@/layouts/*" : ["./src/layout/*"],
+      "@/pages/*" : ["./src/page/*"],
+      "@/styles/*" : ["./src/styles/*"],
+      "@/types/*" : ["./src/type/*"],
+      "@/utilities/*" : ["./src/utility/*"]
+    }
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
